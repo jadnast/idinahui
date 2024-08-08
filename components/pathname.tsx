@@ -7,5 +7,14 @@ function decodeURL(encodedString: string): string {
  
 export default function PathnameINH() {
   const pathname = usePathname()
-  return <p className='font-black text-7xl'><span className='opacity-80 text-2xl'>СЕГОДНЯ... </span><br/><span className='text-inh'>{decodeURL(pathname.slice(1))}</span>, ИДИ НА ХУЙ!</p>
+  const decodedPath = decodeURL(pathname.slice(1))
+
+  return (
+    <>
+      {decodedPath == 'jadnast' || decodedPath == 'li0ard'
+        ? <p className='font-black text-7xl'><span className='opacity-80 text-2xl'>СЕГОДНЯ... </span><br/><span className='text-inh'>Самолично</span>, ИДИ НА ХУЙ!</p>
+        : <p className='font-black text-7xl'><span className='opacity-80 text-2xl'>СЕГОДНЯ... </span><br/><span className='text-inh'>{decodedPath}</span>, ИДИ НА ХУЙ!</p>
+      }
+    </>
+  )
 }
