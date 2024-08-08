@@ -1,0 +1,27 @@
+{   
+    "name":"ИДИ НА ХУЙ",
+    "short_name":"ИДИ НА ХУЙ",
+    "id":"v1.0",
+    "start_url":"/",
+    "description": "ИДИ НА ХУЙ СЕГОДНЯ",
+    "icons":[
+        {   
+            "src":"/brand/android-chrome-192x192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/brand/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ],
+    "screenshots": {
+        "form_factor":"wide",
+        "label":"ИДИ НА ХУЙ"
+    },
+    "theme_color":"#FF0303",
+    "background_color":"#ffffff",
+    "display":"standalone",
+    "form_factor":"wide"
+}
